@@ -1,56 +1,89 @@
+:root {
+    --bg-color: #34495E;
+    --second-color: #fff;
+}
+
 * {
-	margin: 0;
 	padding: 0;
+	margin: 0;
 }
-
 body {
-	font-family: Raleway, Rubik, Roboto, sans-serif;
-	background-color: #2B2F2F;
-	}
-
-.header {
-	width: 400px;
-	border: 3px solid #F1C40F;
-	color: #FDFEFE;
-	box-sizing: border-box;
-	line-height: 2;
-	text-align: center;
-	align-items: center;
-    justify-content: center;
-    margin: 50px auto 50px auto;
-    display: block;
-    padding: 20px;
-    margin-top: 60px;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--second-color);
 }
 
-.links {
-	color: #F1C40F;
+a {
 	text-decoration: none;
-}
-
-.garabatito {
-	width: 200px;
-}
-
-.fa-instagram {
-	display: inline;
+	color: #FFFFFF;
 }
 
 .container {
-	color: #FDFEFE;
-	width: 400px;
-	border: 3px solid #F1C40F;
-	box-sizing: border-box;
+    position: relative;
+    padding: 20px 8px 32px 8px;
+    background: var(--bg-color);
+	color: #FFFFFF;
 	text-align: center;
-	align-items: center;
-    justify-content: center;
-    margin: 50px auto 50px auto;
-    display: block;
-    padding-bottom: 20px;
 }
 
-.cont__text {
-	font-size: 20px;
-	margin: auto;
-	padding-top: 20px;
+.container:after {
+    background: linear-gradient(-45deg, var(--second-color) 10px, transparent 0), linear-gradient(45deg, var(--second-color) 10px, transparent 0);
+    background-position: left bottom;
+    background-repeat: repeat-x;
+    background-size: 20px 20px;
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 20px;
+}
+
+.segundo {
+    position: relative;
+    padding: 20px 8px 32px 8px;
+    background: var(--second-color);
+	color: #000;
+	text-align: center;
+}
+
+.segundo:after {
+    background: linear-gradient(-45deg, var(--bg-color) 10px, transparent 0), linear-gradient(45deg, var(--bg-color) 10px, transparent 0);
+    background-position: left bottom;
+    background-repeat: repeat-x;
+    background-size: 20px 20px;
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 20px;
+}
+
+.tercero {
+    position: relative;
+    padding: 20px 8px 32px 8px;
+    background: var(--bg-color);
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.tercero:after {
+    background: linear-gradient(-45deg, var(--second-color) 10px, transparent 0), linear-gradient(45deg, var(--second-color) 10px, transparent 0);
+    background-position: left bottom;
+    background-repeat: repeat-x;
+    background-size: 20px 20px;
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 20px;
+}
+
+
+i {
+    margin: 30px;
 }
